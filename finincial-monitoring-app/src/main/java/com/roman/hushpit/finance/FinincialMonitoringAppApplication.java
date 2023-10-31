@@ -1,4 +1,4 @@
-package com.roman.hushpit.finance.financeauth;
+package com.roman.hushpit.finance;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
