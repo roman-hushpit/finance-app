@@ -64,14 +64,12 @@ public class SecurityConfiguration {
         return httpSecurity.build();
     }
 
-
     @Bean
     public UserDetailsService userDetailsService() {
         var user = User.withUsername("roman")
                 .password("password")
                 .authorities("read")
                 .build();
-
         return new InMemoryUserDetailsManager(user);
     }
 
