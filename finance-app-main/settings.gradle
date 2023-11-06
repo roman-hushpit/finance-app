@@ -1,0 +1,5 @@
+rootProject.name = 'finance-app-main'
+
+include 'account-management-server'
+include 'authorization-server'
+include 'finance-app-frontend'

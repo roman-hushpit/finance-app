@@ -1,0 +1,23 @@
+plugins {
+    id 'com.github.node-gradle.node' version '3.1.1' // Check for the latest version
+}
+
+node {
+    version = '20.9.0' // Specify your Node.js version
+    npmVersion = '10.1.0' // Specify the npm version
+    download = true
+}
+
+// Define tasks to install npm dependencies and build the React app
+task installDependencies(type: YarnTask) {
+    args = ['install']
+}
+
+task buildReactApp(type: YarnTask, dependsOn: installDependencies) {
+    args = ['build']
+    inputs.dir 'src'
+    outputs.dir 'build'
+}
+
+// Bind the React build task to the Gradle 'build' task
+build.dependsOn buildReactApp

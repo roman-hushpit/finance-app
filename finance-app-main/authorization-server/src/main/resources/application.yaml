@@ -1,0 +1,15 @@
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: create
+    docker:
+        compose:
+            enabled: true
+            file: compose.yaml
+
+server:
+    port: 9000
+
+logging:
+    level:
+        root: info
