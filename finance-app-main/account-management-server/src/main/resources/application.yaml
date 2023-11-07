@@ -1,0 +1,12 @@
+spring:
+    jpa:
+        hibernate:
+            ddl-auto: create
+    docker:
+        compose:
+            enabled: true
+            file: compose.yaml
+
+logging:
+    level:
+        root: info

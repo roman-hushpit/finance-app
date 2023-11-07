@@ -1,6 +1,6 @@
 package com.roman.hushpit.finance.security;
 
-import com.roman.hushpit.finance.entity.CustomUser;
+import com.roman.hushpit.finance.repository.entity.CustomUser;
 import com.roman.hushpit.finance.repository.CustomUserRepository;
 import com.roman.hushpit.finance.security.entity.CustomUserDetails;
 import lombok.RequiredArgsConstructor;

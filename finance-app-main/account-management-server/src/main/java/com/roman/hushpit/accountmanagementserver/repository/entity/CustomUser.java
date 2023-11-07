@@ -1,6 +1,8 @@
-package com.roman.hushpit.finance.entity;
+package com.roman.hushpit.accountmanagementserver.repository.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,8 +20,9 @@ import java.util.UUID;
 public class CustomUser {
 
     @Id
+    @GeneratedValue(strategy=GenerationType.SEQUENCE)
     private Long id;
-    private UUID userId; // UUID for user ID
+    private UUID userId;
     private String email;
     private String password;
     private Boolean active;

@@ -1,6 +1,7 @@
-package com.roman.hushpit.finance.repository;
+package com.roman.hushpit.accountmanagementserver.repository;
 
-import com.roman.hushpit.finance.repository.entity.CustomUser;
+
+import com.roman.hushpit.accountmanagementserver.repository.entity.CustomUser;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

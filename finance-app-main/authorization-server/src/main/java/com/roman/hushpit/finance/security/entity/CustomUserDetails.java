@@ -1,9 +1,7 @@
 package com.roman.hushpit.finance.security.entity;
 
-import com.roman.hushpit.finance.entity.CustomUser;
-import lombok.Data;
+import com.roman.hushpit.finance.repository.entity.CustomUser;
 import lombok.Getter;
-import lombok.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
